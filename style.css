@@ -1,6 +1,6 @@
 th {
     border: 2px solid black;
-    width: 80px;
+    width: 200px;
     height: 50px;
     border-radius: 10px;
     color: white;
@@ -8,11 +8,6 @@ th {
     text-transform: uppercase;
     font-style: italic;
     font-family: cursive;
-}
-
-#T{
-	position: relative;
-	left: 300px;
 }
 
 h1{

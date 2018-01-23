@@ -11,24 +11,30 @@
 <body>
 	<h1>La facture :</h1>
 	<form action="">
-		<table id="T">
+		<table align="center">
 			<tr>
 				<td ><label>Libelle</label></td>
-				<td><input type="text" id="lib"></td>
+				<td><input type="text" id="lib" placeholder="Libelle"></td>
 
 				<td ><label>Prix</label></td>
-				<td><input type="text" id="prix"></td>
+				<td><input type="text" id="prix" placeholder="Prix"></td>
 
 				<td ><label>Quantite</label></td>
-				<td><input type="text" id="Qan"></td>
+				<td><input type="text" id="Qan" placeholder="Quantite"></td>
 
 
 				<td><input type="button" value="+" onclick="ajouter()"></td>
 			</tr>
-			<tr>
-				<td><br><br><br></td>
-			</tr>
-                      <tr>
+			   
+						
+
+			
+
+		</table >
+
+			<br><br><br>
+			<table align="center" id="T">
+				 <tr>
 						<th>
 							<label for=""> Libelle </label>
 						</th>
@@ -42,23 +48,14 @@
 								<label for=""> Resultat </label>
 							</th>
 						</tr>
-						
-
-			
-
-		</table >
-
-			
+			</table>
 					
 
-				<div id="dd">
-				<lable>THT</lable>
-				<input type="text" name="" class="txtb"><br><br>
-				<lable>TVA</lable>
-				<input type="text" name="" class="txtb"><br><br>
-				<lable>TTC</lable>
-				<input type="text" name="" class="txtb"><br>
-			    </div>
+	<div id="dd">
+	<div>THT : <span id="tht" class="txtb"></span></div><br><br>
+	<div>TVA : <span class="txtb"></span></div><br><br>
+	<div>TTC : <span class="txtb"></span></div><br>			
+    </div>
 	</form>
 </body>
 </html>
