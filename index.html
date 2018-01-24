@@ -14,16 +14,16 @@
 		<table align="center">
 			<tr>
 				<td ><label>Libelle</label></td>
-				<td><input type="text" id="lib" placeholder="Libelle"></td>
+				<td><input type="text" id="lib" placeholder="Libelle" ></td>
 
 				<td ><label>Prix</label></td>
-				<td><input type="text" id="prix" placeholder="Prix"></td>
+				<td><input type="text" id="prix" placeholder="Prix" ></td>
 
 				<td ><label>Quantite</label></td>
-				<td><input type="text" id="Qan" placeholder="Quantite"></td>
+				<td><input type="text" id="Qauntite" placeholder="Quantite" ></td>
 
 
-				<td><input type="button" value="+" onclick="ajouter()"></td>
+				<td><input type="button" value="Ajouter" onclick="ajouter()" id="btn1"></td>
 			</tr>
 			   
 						
@@ -36,7 +36,7 @@
 			<table align="center" id="T">
 				 <tr>
 						<th>
-							<label for=""> Libelle </label>
+							<label for="" > Libelle </label>
 						</th>
 							<th> 
 								<label for=""> Prix</label>
@@ -45,17 +45,18 @@
 								<label for=""> Quantite </label>
 							</th>
 							<th> 
-								<label for=""> Resultat </label>
+								<label for=""> Action </label>
 							</th>
 						</tr>
 			</table>
 					
-
+    <input type="button" name="cal" value="Calculer" onclick="calculer()" id="btn">
 	<div id="dd">
 	<div>THT : <span id="tht" class="txtb"></span></div><br><br>
 	<div>TVA : <input class="txtb" id="tva"> </div><br><br>
 	<div>TTC : <span class="txtb" id="ttc"></span></div><br>			
     </div>
 	</form>
+
 </body>
 </html>
