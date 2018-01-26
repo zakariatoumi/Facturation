@@ -35,3 +35,7 @@ ttc.innerHTML=somme*(1+tva.value/100);
 function sup(e) {
 	e.parentNode.parentNode.remove();
 }
+
+function imprimer() {
+	window.print();
+}
