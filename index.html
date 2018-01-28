@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Facture</title>
 	<script type="text/javascript" src="javascript.js">
 		
 	</script>
@@ -10,7 +10,9 @@
 	
 </head>
 <body>
+	<div id="logo" class="ne_pas_imprimer"><img src="image/logo.png" alt=""></div>
 	<h1>La facture :</h1>
+
 	<form action="">
 		<table align="center">
 			<tr>
@@ -24,7 +26,7 @@
 				<td><input type="text" id="Qauntite" placeholder="Quantite" ></td>
 
 
-				<td><input type="button" value="Ajouter" onclick="ajouter()" id="btn1"></td>
+				<td class="ne_pas_imprimer"><input type="button" value="Ajouter" onclick="ajouter()" id="btn1"></td>
 			</tr>
 			   
 						
@@ -51,15 +53,15 @@
 						</tr>
 			</table>
 					
-    <input type="button" name="cal" value="Calculer" onclick="calculer()" id="btn">
+    <input type="button" name="cal" class="ne_pas_imprimer" value="Calculer" onclick="calculer()" id="btn">
 	<div id="dd">
 	<div>THT : <span id="tht" class="txtb"></span></div><br><br>
-	<div>TVA : <input class="txtb" id="tva"> </div><br><br>
+	<div>TVA : <input type="text" class="txtb" id="tva"> </div><br><br>
 	<div>TTC : <span class="txtb" id="ttc"></span></div><br>			
     </div>
 
 
 	</form>
-<button onclick="imprimer()" id="btn2">Imprimer</button>
+<button class="ne_pas_imprimer" onclick="imprimer()" id="btn2">Imprimer</button>
 </body>
 </html>
